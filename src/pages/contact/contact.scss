@@ -1,0 +1,73 @@
+
+$border: 1px solid #17387A;
+
+page-contact {
+
+}
+.ion-content{
+  width: 100%;
+  height: 100%;
+  .top-show{
+    width: 100%;
+    height: 250px;
+    //background-color: #1D7AFB;
+    .alarm{
+      width: 100%;
+      height: 200px;
+      border: $border;
+      //background-color: #162959;
+      //background: url("../../../assets/img/lighting/max-box.png") no-repeat;
+      padding: 5px;
+      .table-alarm{
+        width: 100%;
+        height: 90%;
+        margin-top: 5%;
+        float: left;
+        span{
+          font-size: 16px;
+          color: #00b3ee;
+        }
+        .unify-alarm{
+          & tr{
+            height: 20px;
+            & td{
+              text-align: center;
+              width: 33%;
+              line-height: 20px;
+              p{
+                width: 50px;
+                height: 20px;
+                //background-color: red;
+                border-radius: 10px;
+                color: #fff;
+                cursor: pointer;
+              }
+              /*                  i{
+                                  width: 30px;
+                                  height: 20px;
+                                  background-color: red;
+                                  border-radius: 10px;
+                                }*/
+              .red{
+                //background-color: red;
+                border-radius: 10px;
+                width: 50px;
+                margin-left: 42px;
+              }
+              .blue{
+                //background-color: #00b3ee;
+                border-radius: 10px;
+                width: 50px;
+                margin-left: 42px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .echart{
+    height: 350px;
+    width: 300px;
+  }
+}

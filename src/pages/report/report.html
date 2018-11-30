@@ -1,0 +1,48 @@
+
+
+<ion-content>
+  <div class="ion-content">
+    <div class="top-show">
+      <div class="alarm">
+        <table class="table-alarm">
+          <thead class="top">
+          <tr style="height: 30px">
+            <th style="text-align: center" >
+              <span></span></th>
+            <th style="text-align: center" >
+              <span>未处理告警</span></th>
+            <th style="text-align: center" >
+              <span>全部告警</span></th>
+          </tr>
+
+          </thead>
+          <tbody class="unify-alarm">
+          <tr class="alarm-tr active"  data-number = "3">
+            <td><span>今日告警</span></td>
+            <td><p class="red">{{count_false1}}</p></td>
+            <td><p class="blue">{{count1}}</p></td>
+          </tr>
+          <tr class="alarm-tr"  data-number="4">
+            <td><span>本周告警</span></td>
+            <td><p class="red">{{count_false2}}</p></td>
+            <td><p class="blue">{{count2}}</p></td>
+          </tr>
+          <tr class="alarm-tr"  data-number="5">
+            <td><span>本月告警</span></td>
+            <td><p class="red">{{count_false3}}</p></td>
+            <td><p class="blue">{{count3}}</p></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="echart">
+      <div id="main" style="width: 350px;height:300px;" ></div>
+      <!--<div class="echart" echarts [options]="LineOptions"></div>-->
+    </div>
+  </div>
+
+
+</ion-content>

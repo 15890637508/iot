@@ -1,0 +1,112 @@
+
+  <div class="ion-content">
+    <div class="per-top">
+      <div class="per-logo">
+        <img src="assets/imgs/per-logo.png">
+      </div>
+      <div class="per-right">
+        <i>账户：Picc a2</i>
+        <i><img src="assets/disc/location.png"><span>picc3号工厂</span></i>
+      </div>
+
+    </div>
+    <div class="per-list">
+      <ion-item class="ion-lt" no-lines (click) = "changePassword()">
+        <p>修改密码</p><img src="assets/imgs/left.png">
+      </ion-item>
+      <ion-item class="ion-lt" no-lines (click) = "changeIP()">
+        <p>配置IP地址</p><img src="assets/imgs/left.png">
+      </ion-item>
+      <ion-item class="ion-lt" no-lines>
+        <p>声音模式</p><img src="assets/imgs/left.png">
+      </ion-item>
+      <ion-item class="ion-lt" no-lines>
+        <p>版本号</p>
+        <i>v11.1.0</i>
+      </ion-item>
+      <ion-item class="ion-lt" no-lines>
+        <p>清除缓存</p>
+        <i></i>
+      </ion-item>
+      <ion-item class="ion-lt" no-lines (click) = "loginOut()">
+        <p>退出登录</p><img src="assets/imgs/left.png">
+
+      </ion-item>
+    </div>
+
+  </div>
+
+
+<!--
+  &lt;!&ndash; 重置用户密码对话框 &ndash;&gt;
+  <div bsModal #openResetUserPassModal="bs-modal" class="modal fade" tabindex="-1" role="dialog"
+       aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-danger" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">修改密码</h4>
+          <button type="button" class="close" (click)="closeModal(openResetUserPassModal)" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+        <div class="modal-body">
+
+          <form action="" method="post" class="form-horizontal" [formGroup]="user_info">
+            <div class="form-group row ">
+              <div class="col align-self-center">
+                <div class="input-group">
+                  <span class="input-group-addon col-md-3">新密码</span>
+
+                  <input type="password" formControlName="pwd"
+                         name="input1-group1" reverse="true" validateEqual="rpwd" class="form-control col-md-9" placeholder=""
+                         required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row"
+                 *ngIf="!user_info.controls['pwd'].valid && user_info.controls['pwd'].dirty">
+              <div class="col align-self-center">
+                <small>
+                  <span class="red">密码长度6-16个字符</span>
+                </small>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col align-self-center">
+                <div class="input-group">
+                  <span class="input-group-addon col-md-3">确认新密码</span>
+
+                  <input type="password" formControlName="rpwd"
+                         name="input1-group1" class="form-control col-md-9" placeholder="" validateEqual="pwd">
+                </div>
+              </div>
+            </div>
+            <div class="form-group row"
+                 *ngIf="!user_info.controls['rpwd'].valid && user_info.controls['rpwd'].dirty||user_info.controls['rpwd'].value!=user_info.controls['pwd'].value">
+              <div class="col align-self-center">
+                <small>
+                  <span class="red">两次输入的密码必须相同</span>
+                </small>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <span class="pull-left error" [ngClass]="{'display': msgShow}">&nbsp;&nbsp;{{globelMsg}}</span>
+
+          <button type="button" class="btn btn-primary"
+                  (click)="updatePass()">重置
+          </button>
+          <button type="button" class="btn btn-secondary" (click)="closeModal(openResetUserPassModal)">
+            取消
+          </button>
+        </div>
+      </div>
+      &lt;!&ndash; /.modal-content &ndash;&gt;
+    </div>
+    &lt;!&ndash; /.modal-dialog &ndash;&gt;
+  </div>
+
+-->

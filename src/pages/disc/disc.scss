@@ -1,0 +1,152 @@
+$color:#FFFFFF;
+page-disc {
+
+}
+ion-content{
+  width: 100%;
+  height: 100%;
+  .disc-content{
+    width: 100%;
+    //height: 100%;
+    position: relative;
+    .disc-top{
+      margin-top: 14px;
+      height: 159px;
+      width: 100%;
+      padding: 10px;
+      background: url("../assets/disc/iot-bg.png");
+      border-top: 1px solid #6343FE;
+      .disc-header{
+        margin-left: 33px;
+        width: 100%;
+        height: 50%;
+        .top-left{
+          margin-top: 29px;
+          float: left;
+          height: 55px;
+          width: 50px;
+          background: url("../assets/disc/city.png") no-repeat;
+        }
+        .top-loc{
+          margin-top: 29px;
+          float: right;
+          width: calc(100% - 55px);
+          height: calc(100% - 50px);
+          i{
+            display: block;
+            font-size: 14px;
+            color: $color;
+            padding: 2px;
+            span{
+              font-size: 12px;
+              color: $color;
+              padding-left: 5px;
+            }
+          }
+        }
+      }
+      ul{
+        margin-left: 12px;
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        overflow: hidden;
+        text-align: center;
+        padding: 0px;
+        & > li{
+          float: left;
+          width: 20%;
+          height: 30px;
+          img{
+            width: 33px;
+            height: 33px;
+            //background-color: #394052;
+            //border-radius: 50%;
+          }
+          span{
+            display: block;
+            color: $color;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .disc-center{
+      //margin-top: 217px;
+      height: 185px;
+      width: 100%;
+      .cen-header{
+        //height: 20px;
+        //width: 100%;
+        p{
+          font-size: 16px;
+          color: #999999;
+          margin-left: 0px;
+        }
+      }
+      ul{
+        height: 150px;
+        width: 100%;
+        position: relative;
+        padding: 0px;
+        //transform: translate(-50%, 0);
+        overflow: hidden;
+        & > li{
+          float: left;
+          height: 70px;
+          width: 33%;
+          text-align: center;
+          margin-bottom: 5px;
+          //background-color: #0d81ff;
+          img{
+            //width: 100%;
+            //height: calc(100% - 12px);
+            text-align: center;
+          }
+          span{
+            //text-align: center;
+            display: block;
+            color: $color;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .disc-footer{
+      width: 100%;
+      height: calc(100% - 20px);
+      .foot-header{
+        p{
+          font-size: 16px;
+          color: #999999;
+          margin-left: 0px;
+          height: 20px;
+        }
+      }
+    }
+    .foot-list{
+      //height: calc(100% - 50px);
+      width: 100%;
+      background-color: #252531;
+      .table-list{
+        height: 50px;
+        width: 100%;
+        tbody{
+          width: 100%;
+          height: 20px;
+          overflow: hidden;
+          th{
+            float: left;
+            height: 18px;
+            width: 50%;
+            color: #515151;
+            text-align: center;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+}

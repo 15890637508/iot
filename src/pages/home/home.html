@@ -1,0 +1,15 @@
+
+<ion-content padding>
+
+  <!-- 轮播:
+  autoplay:2s之后开始轮播
+  loop:循环播放
+  pager:分页器（小圆点） pager=true
+-->
+  <ion-slides autoplay="2000" loop=true>
+    <ion-slide *ngFor="let item of slidesItems" >
+      <img src="{{item.img}}" class="slide-image">
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
